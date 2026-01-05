@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,3 +63,53 @@
 </body> 
 </html>
     
+=======
+<head>
+<!--ส่วนนี้ไม่แสดงออกไปในหน้าจอ ของ browser-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .. 1. แต่งใคร ? (id class DOM) 2.แต่งอะไร*/
+        #register {
+            font-size: 24px;
+            color: blue;
+            font-weight: 800;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: lightgray;
+
+            padding-left: 10px;
+        }
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--ส่วนที่แสดงออกไปหน้า browser-->
+    <!-- form -->
+     <div id="register">Register Form</div>
+    ชื่อ<input class="form" type ="text">
+    นามสกุล<input class="form" type ="text"> <br>
+    อายุ<input class="form" type ="number" min="0" max="150" <br>
+    เพศ<input class="form" type ="radio" name="gender" value="male">ชาย
+        <input type ="radio" name="gender" value="female">หญิง <br>
+
+    งานอดิเรก
+    <input type ="checkbox" name="hobby" value="reading">อ่านหนังสือ
+    <input type ="checkbox" name="hobby" value="basketball">บาสเกตบอล
+    <input type ="checkbox" name="hobby" value="traveling">ท่องเที่ยว <br>
+
+    อธิบายตัวเอง <br> 
+    <textarea rows="4" cols="50"></textarea> <br>
+    <input type="submit" value="Submit">
+</body>
+</html>
+>>>>>>> fdded761aaa533529bdd41bd391ca33717b09746
