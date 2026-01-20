@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDOM Example</title>
+</head>
+
+<!--//* java events
+onclick
+onchange
+onkeyup
+onkeydown
+onkeypress
+
+onmouseover
+onmousedown
+onmouseup *// -->
+
+
+<body>
+    <input type="radio" name="gender" value="male" onchange="changeGender()"> Male
+    <input type="radio" name="gender" value="female" onchange="changeGender()"> Female
+    <!-- <button onclick="userClicked()">คลิก !!</button>
+    <div onclick="divClicked()">คลิก Div</div> -->
+<!--งานอดิเรก:
+    <input type="checkbox" name="hobby" value="reading"> Reading
+    <input type="checkbox" name="hobby" value="traveling"> Traveling
+    <input type="checkbox" name="hobby" value="gaming"> Gaming
+    <script>
+        let checkboxesInputs = document.querySelectorAll('input[name="hobby"]');
+        for (let i = 0; i < checkboxesInputs.length; i++) {
+            console.log(checkboxesInputs[i].value);
+        }
+    </script>-->
+    <script>
+        function changeGender() {
+            // เลือก gender ทุก input ออกมา
+            let genderInputs = document.querySelectorAll('input[name="gender"]');
+            // ใคร checked อยู่ = เพศโดนเลือกอยู่
+            for (let i = 0; i < genderInputs.length; i++) {
+                if (genderInputs[i].checked) {
+                    console.log("Gender Selected: " + genderInputs[i].value);
+            }
+        }
+    }
+        // function divClicked() {
+            //alert("คุณคลิกที่ div แล้ว!");
+        
+    </script>
+</body>
+</html>
