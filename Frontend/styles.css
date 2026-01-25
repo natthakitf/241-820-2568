@@ -1,0 +1,166 @@
+/* นำเข้าฟอนต์ Prompt เพื่อความทันสมัย */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    /* พื้นหลังแบบไล่เฉดสีเข้ม (Dark Gradient) */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* --- Container: สไตล์กระจก (Glassmorphism) --- */
+.container {
+    background: rgba(255, 255, 255, 0.05); /* สีขาวจางๆ */
+    backdrop-filter: blur(15px); /* เบลอฉากหลัง */
+    -webkit-backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* ขอบกระจกบางๆ */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* --- Header --- */
+.header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* ตัวหนังสือไล่สี Neon */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Layout --- */
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* ป้ายกำกับ (Label) */
+.header-form {
+    width: 80px;
+    font-weight: 400;
+    color: #ccc; /* สีเทาอ่อน */
+    font-size: 15px;
+}
+
+/* --- Input Fields (ช่องกรอก) --- */
+.form {
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px 4px 0 0;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form:focus {
+    outline: none;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #00c6ff; /* เส้นเรืองแสงสีฟ้าเมื่อกด */
+    box-shadow: 0 4px 10px rgba(0, 198, 255, 0.2);
+}
+
+/* --- Textarea --- */
+textarea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    font-family: inherit;
+    resize: vertical;
+    margin-top: 10px;
+    min-height: 80px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.1);
+}
+
+/* --- Radio & Checkbox Styling --- */
+/* ปรับแต่งส่วนเพศและงานอดิเรกให้อ่านง่ายขึ้น */
+.gender .flex div,
+.form-input div {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #eee;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.gender .flex div:hover,
+.form-input div:hover {
+    color: #00c6ff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #00c6ff; /* เปลี่ยนสีปุ่มติ๊กเป็นสีฟ้า Neon */
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* --- Button --- */
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4); /* เงาเรืองแสง */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    transform: translateY(-2px); /* ลอยขึ้นนิดหน่อย */
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
