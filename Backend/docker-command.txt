@@ -42,3 +42,6 @@ docker run -p 9000:80 nginx
 
 //detached mode
 docker run -d -p 9100:80 nginx
+
+docker-compose up -d
+docker-compose down
