@@ -20,14 +20,17 @@ body {
 
 /* --- Container: สไตล์กระจก (Glassmorphism) --- */
 .container {
-    background: rgba(255, 255, 255, 0.05); /* สีขาวจางๆ */
-    backdrop-filter: blur(15px); /* เบลอฉากหลัง */
+    background: rgba(255, 255, 255, 0.05);
+    /* สีขาวจางๆ */
+    backdrop-filter: blur(15px);
+    /* เบลอฉากหลัง */
     -webkit-backdrop-filter: blur(15px);
     width: 100%;
     max-width: 480px;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* ขอบกระจกบางๆ */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* ขอบกระจกบางๆ */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -62,7 +65,8 @@ body {
 .header-form {
     width: 80px;
     font-weight: 400;
-    color: #ccc; /* สีเทาอ่อน */
+    color: #ccc;
+    /* สีเทาอ่อน */
     font-size: 15px;
 }
 
@@ -83,7 +87,8 @@ body {
 .form:focus {
     outline: none;
     background: rgba(0, 0, 0, 0.4);
-    border-bottom: 2px solid #00c6ff; /* เส้นเรืองแสงสีฟ้าเมื่อกด */
+    border-bottom: 2px solid #00c6ff;
+    /* เส้นเรืองแสงสีฟ้าเมื่อกด */
     box-shadow: 0 4px 10px rgba(0, 198, 255, 0.2);
 }
 
@@ -100,6 +105,26 @@ textarea {
     margin-top: 10px;
     min-height: 80px;
     transition: 0.3s;
+}
+
+.message {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.message.success {
+    background-color: #4CAF50;
+    color: white;
+    display: block;
+}
+
+.message.danger {
+    background-color: #f44336;
+    color: white;
+    display: block;
 }
 
 textarea:focus {
@@ -128,7 +153,8 @@ textarea:focus {
 
 input[type="radio"],
 input[type="checkbox"] {
-    accent-color: #00c6ff; /* เปลี่ยนสีปุ่มติ๊กเป็นสีฟ้า Neon */
+    accent-color: #00c6ff;
+    /* เปลี่ยนสีปุ่มติ๊กเป็นสีฟ้า Neon */
     width: 16px;
     height: 16px;
     margin-right: 6px;
@@ -150,14 +176,17 @@ input[type="checkbox"] {
     font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4); /* เงาเรืองแสง */
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+    /* เงาเรืองแสง */
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+
 .button:hover {
-    transform: translateY(-2px); /* ลอยขึ้นนิดหน่อย */
+    transform: translateY(-2px);
+    /* ลอยขึ้นนิดหน่อย */
     box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
 }
 
